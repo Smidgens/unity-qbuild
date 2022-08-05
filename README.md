@@ -13,5 +13,3 @@ Plugin for Unity that lets you create build configurations different from those 
 The plugin currently only supports building to the following platforms:
 * Desktop (Windows/Mac/Linux)
 * WebGL
-
-Mac and Linux platforms, while listed, haven't been tested as much as Windows or WebGL, and feedback for and/or contribution to those platforms are welcome, and greatly appreciated.
