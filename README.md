@@ -1,15 +1,29 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Smidgens/UnityQuickBuild/master/LICENSE)
-
-# Unity Quick Build
-Plugin for Unity that lets you create build configurations different from those of Unity's own. Ideal for creating simple prototype builds of individual features during development without needing to pollute the default build settings with test scenes.
+![](/.github/banner.png?raw=true "")
+![](/.github/gallery.png?raw=true "")
 
 
-| Configuration inspector |
-| ------------- |
-| ![Build Configuration](/Screenshots/01.png?raw=true "Configuration") |
+## ℹ️ Features
 
-## Platform Support
+* Quickly create test builds without polluting the project build settings.
+* 🤞 Reasonably lightweight.
 
-The plugin currently only supports building to the following platforms:
-* Desktop (Windows/Mac/Linux)
-* WebGL
+
+<br/>
+
+
+<br/>
+
+## 📦 Install
+
+1. Open Package Manager
+2. Paste GitHub URL:\
+`https://github.com/Smidgens/unity-qbuild.git#<version_tag>`
+
+
+<br/>
+
+## 🚀 Use
+
+1. Create a `Build Profile`.
+2. Configure desired settings.
+3. Click `Build`.

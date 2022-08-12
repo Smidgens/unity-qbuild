@@ -1,0 +1,20 @@
+{
+	"name":"com.smidgenomics.unity-qbuild",
+	"version":"0.1.0",
+	"displayName":"Quick Build",
+	"description":"Quick build utility.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Smidgens/unity-qbuild.git"
+	},
+	"author":{
+		"name":"Unnar Krist",
+		"url":"https://github.com/Smidgens"
+	},
+	"keywords":[
+		"build",
+		"qbuild",
+		"quick-build",
+		"tool"
+	]
+}
