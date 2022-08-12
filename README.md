@@ -1,6 +1,8 @@
 ![](/.github/banner.png?raw=true "")
-![](/.github/gallery.png?raw=true "")
 
+<p align="center">
+ <img src="/.github/gallery.png" align="center"/>
+</p>
 
 ## ℹ️ Features
 
