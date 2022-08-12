@@ -6,12 +6,7 @@
 
 ## ℹ️ Features
 
-* Quickly create test builds without polluting the project build settings.
-* 🤞 Reasonably lightweight.
-
-
-<br/>
-
+* Quickly create test builds without polluting the default build settings.
 
 <br/>
 
