@@ -4,13 +4,13 @@
  <img src="/.github/gallery.png" align="center"/>
 </p>
 
-## ℹ️ Features
+# ℹ️ Features
 
 * Quickly create test builds without polluting the default build settings.
 
 <br/>
 
-## 📦 Install
+# 📦 Install
 
 1. Open Package Manager
 2. Paste GitHub URL:\
@@ -19,7 +19,7 @@
 
 <br/>
 
-## 🚀 Use
+# 🚀 Use
 
 1. Create a `Build Profile`.
 2. Configure desired settings.
