@@ -36,7 +36,7 @@ namespace Smidgenomics.Unity.QBuild.Editor
 		private string[] GetIncludedScenePaths()
 		{
 			return _scenes
-			.Where(x => x.asset && x.skip)
+			.Where(x => x.asset && !x.skip)
 			.Select(x => x.asset.GetAssetPath())
 			.ToArray();
 		}

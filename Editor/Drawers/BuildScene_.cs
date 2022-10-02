@@ -18,14 +18,18 @@ namespace Smidgenomics.Unity.QBuild.Editor
 
 			pos.height = EditorGUIUtility.singleLineHeight;
 
-			using (new EditorGUI.PropertyScope(pos, l, prop))
-			{
-				var cols = pos.SliceHorizontalMixed(25f, 1f);
-				var asset = prop.FindPropertyRelative(nameof(BuildScene.asset));
-				var skip = prop.FindPropertyRelative(nameof(BuildScene.skip));
-				skip.boolValue = !EditorGUI.Toggle(cols[0], !skip.boolValue);
-				EditorGUI.PropertyField(cols[1], asset, GUIContent.none);
-			}
+
+			EditorGUI.BeginProperty(pos, l, prop);
+
+			var muteRect = pos.SliceLeft(25f);
+
+			var asset = prop.FindPropertyRelative(nameof(BuildScene.asset));
+			var skip = prop.FindPropertyRelative(nameof(BuildScene.skip));
+			skip.boolValue = !EditorGUI.Toggle(muteRect, !skip.boolValue);
+			EditorGUI.PropertyField(pos, asset, GUIContent.none);
+
+			EditorGUI.EndProperty();
+
 		}
 
 	}
