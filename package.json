@@ -1,6 +1,6 @@
 {
 	"name":"com.smidgenomics.unity-qbuild",
-	"version":"0.1.0",
+	"version":"0.4.0",
 	"displayName":"Quick Build",
 	"description":"Quick build utility.",
 	"repository": {
