@@ -32,11 +32,11 @@ namespace Smidgenomics.Unity.QBuild.Editor
 			return BuildTargetGroup.Unknown;
 		}
 
-		public static bool IsStandalone(this Platform p)
+		public static bool IsStandalone(this EBuildPlatform p)
 		{
 			return
 			p != 0
-			&& p != Platform.WebGL;
+			&& p != EBuildPlatform.WebGL;
 		}
 
 		public static string GetDisplayName(this BuildTarget b)
@@ -50,49 +50,49 @@ namespace Smidgenomics.Unity.QBuild.Editor
 			return b.ToString();
 		}
 
-		public static BuildTarget ToBuildTarget(this Platform p)
+		public static BuildTarget ToBuildTarget(this EBuildPlatform p)
 		{
 			switch (p)
 			{
-				case Platform.Windows: return BuildTarget.StandaloneWindows;
-				case Platform.Windows64: return BuildTarget.StandaloneWindows64;
-				case Platform.Linux64: return BuildTarget.StandaloneLinux64;
-				case Platform.WebGL: return BuildTarget.WebGL;
+				case EBuildPlatform.Windows: return BuildTarget.StandaloneWindows;
+				case EBuildPlatform.Windows64: return BuildTarget.StandaloneWindows64;
+				case EBuildPlatform.Linux64: return BuildTarget.StandaloneLinux64;
+				case EBuildPlatform.WebGL: return BuildTarget.WebGL;
 			}
 			return BuildTarget.NoTarget;
 		}
 
-		public static BuildOptions ToBuildOptions(this CompressionMethod c)
+		public static BuildOptions ToBuildOptions(this ECompressionMethod c)
 		{
 			switch (c)
 			{
-				case CompressionMethod.LZ4: return BuildOptions.CompressWithLz4;
-				case CompressionMethod.LZ4HC: return BuildOptions.CompressWithLz4HC;
+				case ECompressionMethod.LZ4: return BuildOptions.CompressWithLz4;
+				case ECompressionMethod.LZ4HC: return BuildOptions.CompressWithLz4HC;
 			}
 			return BuildOptions.None;
 		}
 
-		public static BuildOptions ToBuildOptions(this DevBuildOptions o)
+		public static BuildOptions ToBuildOptions(this EDevBuildOptions o)
 		{
 			BuildOptions opts = 0;
-			if (o.HasFlag(DevBuildOptions.Profiler))
+			if (o.HasFlag(EDevBuildOptions.Profiler))
 			{
 				opts |= BuildOptions.ConnectWithProfiler;
 			}
-			if (o.HasFlag(DevBuildOptions.ScriptsOnly))
+			if (o.HasFlag(EDevBuildOptions.ScriptsOnly))
 			{
 				opts |= BuildOptions.BuildScriptsOnly;
 			}
-			if (o.HasFlag(DevBuildOptions.Debugging))
+			if (o.HasFlag(EDevBuildOptions.Debugging))
 			{
 				opts |= BuildOptions.AllowDebugging;
 			}
 			return opts;
 		}
 
-		public static bool IsWindows(this Platform p)
+		public static bool IsWindows(this EBuildPlatform p)
 		{
-			return p == Platform.Windows || p == Platform.Windows64;
+			return p == EBuildPlatform.Windows || p == EBuildPlatform.Windows64;
 		}
 
 	}

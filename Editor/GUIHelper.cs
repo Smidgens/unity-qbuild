@@ -9,24 +9,6 @@ namespace Smidgenomics.Unity.QBuild.Editor
 
 	internal static class GUIHelper
 	{
-		//public static void FlagToggles(SerializedProperty p, Type type)
-		//{
-		//	var values = Enum.GetValues(typeof(DevBuildOptions));
-
-		//	var i = 0;
-		//	foreach (var x in values)
-		//	{
-		//		var val = (DevBuildOptions)x;
-		//		var hasFlag = ((DevBuildOptions)p.enumValueIndex).HasFlag(val);
-
-		//		Debug.Log(val + " " + hasFlag);
-		//		var l = new GUIContent(val.ToString());
-		//		EditorGUILayout.Toggle(l, hasFlag);
-		//		i++;
-		//	}
-
-		//}
-
 		public static void LayoutDivider(float m = 5f)
 		{
 			GUILayout.Space(m);
@@ -49,7 +31,7 @@ namespace Smidgenomics.Unity.QBuild.Editor
 		}
 
 
-		private readonly static Color _DIVIDER_COLOR =
+		private static readonly Color _DIVIDER_COLOR =
 		EditorGUIUtility.isProSkin
 		? Color.white * 0.4f
 		: Color.black * 0.5f;

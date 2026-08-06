@@ -6,7 +6,7 @@ namespace Smidgenomics.Unity.QBuild.Editor
 	using UnityEngine;
 
 	[Flags]
-	internal enum DevBuildOptions
+	internal enum EDevBuildOptions
 	{
 		None = 0,
 		Profiler = 1,
@@ -15,7 +15,7 @@ namespace Smidgenomics.Unity.QBuild.Editor
 		Everything = ~0,
 	}
 
-	internal enum Platform
+	internal enum EBuildPlatform
 	{
 		None,
 		Windows,
@@ -26,7 +26,7 @@ namespace Smidgenomics.Unity.QBuild.Editor
 		WebGL,
 	}
 
-	internal enum CompressionMethod
+	internal enum ECompressionMethod
 	{
 		None,
 		LZ4,
